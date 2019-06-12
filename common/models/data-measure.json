@@ -1,0 +1,29 @@
+{
+  "name": "dataMeasure",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_did": {
+      "type": "string"
+    },
+    "_sid": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

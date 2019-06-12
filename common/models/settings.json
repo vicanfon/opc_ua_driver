@@ -1,0 +1,32 @@
+{
+  "name": "settings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "broker": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "platformDomain": {
+      "type": "string"
+    },
+    "routingKeys": {
+      "type": "string"
+    },
+    "driver": {
+      "type": "string"
+    },
+    "activation": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

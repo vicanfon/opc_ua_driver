@@ -1,0 +1,20 @@
+{
+  "name": "logEntry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "getMetadata_response_200",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "endpoint": {
+      "type": [
+        "metadataItem"
+      ],
+      "description": "endpoint"
+    },
+    "objects": {
+      "type": [
+        "metadataItem"
+      ],
+      "description": "what this endpoint is used for"
+    },
+    "device_proprietary_params": {
+      "type": [
+        "metadataItem"
+      ],
+      "description": "device proprietary parameters"
+    },
+    "sensor_proprietary_params": {
+      "type": [
+        "metadataItem"
+      ],
+      "description": "device proprietary parameters"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

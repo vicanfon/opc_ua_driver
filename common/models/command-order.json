@@ -1,0 +1,21 @@
+{
+  "name": "commandOrder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "commandType": {
+      "type": "string",
+      "description": "type of the command. Now it is not used"
+    },
+    "command": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,12 @@
+{
+  "io_datasource": {
+    "name": "io_datasource",
+    "connector": "mongodb",
+    "host": "Driver_mongoDB",
+    "port": 27017,
+    "user": "",
+    "password": "",
+    "database": "driver"
+  }
+}
+

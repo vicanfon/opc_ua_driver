@@ -1,0 +1,32 @@
+{
+  "name": "deviceConfiguration",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_did": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "example": "TS machine"
+    },
+    "processingExpression": {
+      "type": "string",
+      "required": true,
+      "default": "%v"
+    },
+    "propietaryParameters": {
+      "type": [
+        "proprietaryParam"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

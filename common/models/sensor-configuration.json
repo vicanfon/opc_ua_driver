@@ -1,0 +1,57 @@
+{
+  "name": "sensorConfiguration",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_sid": {
+      "type": "string"
+    },
+    "_did": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "properties": {
+      "type": "object",
+      "required": true
+    },
+    "driver": {
+      "type": "object",
+      "required": true
+    },
+    "events": {
+      "type": [
+        "event"
+      ],
+      "required": true
+    },
+    "historicData": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "computingExpression": {
+      "type": "string",
+      "required": true,
+      "default": "%v"
+    },
+    "actuator": {
+      "type": "boolean",
+      "required": true
+    },
+    "propietaryParameters": {
+      "type": [
+        "proprietaryParam"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

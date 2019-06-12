@@ -1,0 +1,30 @@
+{
+  "name": "property",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "integer",
+        "number",
+        "string",
+        "date",
+        "boolean"
+      ]
+    },
+    "unit": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

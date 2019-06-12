@@ -1,0 +1,32 @@
+{
+  "name": "metadataItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "endpoint"
+    },
+    "desc": {
+      "type": "string",
+      "description": "what this endpoint is used for"
+    },
+    "verb": {
+      "type": "string",
+      "description": "type of endpoint",
+      "enum": [
+        "POST",
+        "GET",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

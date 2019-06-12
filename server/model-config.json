@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "deviceConfiguration": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "proprietaryParam": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "deviceStatus": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "driverT": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "sensorConfiguration": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "property": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "event": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "dataMeasure": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "commandOrder": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "logEntry": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "metadataItem": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "getMetadata_response_200": {
+    "dataSource": "io_datasource",
+    "public": false
+  },
+  "device": {
+    "dataSource": "io_datasource",
+    "public": true
+  },
+  "sensor": {
+    "dataSource": "io_datasource",
+    "public": true
+  },
+  "driver": {
+    "dataSource": "io_datasource",
+    "public": true
+  }
+}
