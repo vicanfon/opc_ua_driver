@@ -6,8 +6,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "lint": "eslint .",
-    "start": "node .",
+    "start": "npm install && node .",
     "posttest": "npm run lint",
     "vfos-pack": "node ./scripts/label2manifest.js",
     "vfos-upload": "node ./scripts/uploader.js"
