@@ -209,6 +209,8 @@ sensor.getDataSensor = function (deviceId, sensorId, callback) {
           data_package.timestamp = new Date(data_package.timestamp).toLocaleString();
           dataMeasure.create(data_package).catch(logger);
         }
+        console.log("message:"+JSON.stringify(data_package));
+
 
         // 6. It will push the data to the vf-OS platform
         if (pubsub){

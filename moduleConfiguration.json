@@ -1,8 +1,1 @@
-{
-  "broker": "amqp://admin1:vfos@rabbitmq",
-  "userName": "opc_ua",
-  "platformDomain": "pt.vfos",
-  "routingKeys": ["pt.vfos.sensors.#"],
-  "driver": "opc_ua",
-  "activation": true
-}
+{"broker":"rabbitmq","userName":"opc_ua","platformDomain":"pt.vfos","routingKeys":["pt.vfos.drivers.#"],"driver":"opc_ua","activation":true}
