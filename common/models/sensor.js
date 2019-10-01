@@ -216,7 +216,7 @@ sensor.getDataSensor = function (deviceId, sensorId, callback) {
         if (pubsub){
             let pubSubDestination1 = "pt.vfos.drivers."+ sensorConfig[0].driver.protocol + "." + sensorConfig[0]._did + "." + sensorConfig[0]._sid;
             let pubSubMessage1 = data_package;
-            communications.sendPublication(pubSubDestination1, JSON.stringify(pubSubMessage1));
+            communications.sendPublication(pubSubDestination1, Buffer.from(JSON.stringify(pubSubMessage1)));
         }
         
         // 7. It finishes the request method when called using the REST API
@@ -292,7 +292,7 @@ sensor.subscribeSensor = function(deviceId, sensorId, callback) {
           if (pubsub){
             let pubSubDestination1 = "pt.vfos.drivers."+ sensorConfig[0].driver.protocol + "." + sensorConfig[0]._did + "." + sensorConfig[0]._sid;
             let pubSubMessage1 = data_package;
-            communications.sendPublication(pubSubDestination1, JSON.stringify(pubSubMessage1));
+            communications.sendPublication(pubSubDestination1, Buffer.from(JSON.stringify(pubSubMessage1)));
           }
         }
       }

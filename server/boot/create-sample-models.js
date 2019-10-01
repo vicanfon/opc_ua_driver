@@ -121,7 +121,7 @@ module.exports = function(app) {
       for (let item in result) {
         if (result[item].events != null && result[item].events.length > 0) {   
           app.models.sensor.subscribeSensor(result[item]._did, result[item]._sid, callback);
-          console.log("subscribed to sensor:" +result[item]._did+"-"result[item]._sid);
+          console.log("subscribed to sensor:" +result[item]._did+"-"+result[item]._sid);
         }
       };
     })
