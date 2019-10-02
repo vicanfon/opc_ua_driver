@@ -1,1 +1,1 @@
-{"broker":"rabbitmq","userName":"opc_ua","platformDomain":"pt.vfos","routingKeys":["pt.vfos.drivers.#"],"driver":"opc_ua","activation":true}
+{"broker":"rabbitmq","userName":"opc_ua","platformDomain":"pt.vfos","routingKeys":[],"driver":"opc_ua","activation":true}
